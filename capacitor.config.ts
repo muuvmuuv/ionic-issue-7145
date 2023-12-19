@@ -5,7 +5,15 @@ const config: CapacitorConfig = {
 	appName: 'ionic-issue-7145',
 	webDir: 'www/browser',
 	server: {
-		androidScheme: 'https',
+		cleartext: true,
+	},
+	plugins: {
+		CapacitorHttp: {
+			enabled: true,
+		},
+		CapacitorCookies: {
+			enabled: true,
+		},
 	},
 };
 
