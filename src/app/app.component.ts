@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, inject } from '@angular/core';
 import { IonApp, IonRouterOutlet, IonButton } from '@ionic/angular/standalone';
+import { nanoid } from 'nanoid';
 
 @Component({
 	selector: 'app-root',
@@ -16,13 +17,15 @@ export class AppComponent implements OnInit {
 	}
 
 	doRequest(): void {
+		const id = nanoid();
+
 		this.httpClient
 			.post(
 				'https://jsonplaceholder.typicode.com/posts',
 				{
-					title: 'foo',
-					body: 'bar',
-					userId: 1,
+					title: 'Title: ' + id,
+					body: 'Body: ' + id,
+					userId: id,
 				},
 				{
 					headers: {

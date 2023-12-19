@@ -50,6 +50,9 @@ dependencies:
   ionicons:
     specifier: ^7.2.1
     version: 7.2.2
+  nanoid:
+    specifier: ^5.0.4
+    version: 5.0.4
   rxjs:
     specifier: ~7.8.0
     version: 7.8.1
@@ -7236,6 +7239,12 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
     dev: true
+
+  /nanoid@5.0.4:
+    resolution: {integrity: sha512-vAjmBf13gsmhXSgBrtIclinISzFFy22WwCYoyilZlsrRXNIHSwgFQ1bEdjRwMT3aoadeIF6HMuDRlOxzfXV8ig==}
+    engines: {node: ^18 || >=20}
+    hasBin: true
+    dev: false
 
   /native-run@2.0.0:
     resolution: {integrity: sha512-NKOoSLt3Xi7EDxo62ii7i6IBpQ8EAOwli8EZooPWeAUPP9Vwsptm5khbeSKBSjlIE4XOtuG24QJQEGqy//HFbA==}
